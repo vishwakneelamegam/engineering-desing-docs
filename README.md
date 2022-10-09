@@ -116,4 +116,5 @@ It's a macro for executing specific function.  There are four siri Shortcuts to 
 - When the app is initiated it asks for microphone permission and speech recognition permission
 - If the iOS version is 16.0 or higher then it shows Siri Tip in the application
 - The user interaction will only via with Siri shortcuts
-- Only deleting routine, Viewing routines can be interacted with touch
+- Only deleting routine, Editing the activity of the routine, Viewing routines can be interacted with touch
+- 
