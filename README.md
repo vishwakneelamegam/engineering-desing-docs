@@ -16,7 +16,7 @@
 - If the user removes the shared device tokens then logs relevant to it also removed from the device.
 - If any network failure occurs, after successful network connection the latest logs are updated to the cloud.
 - The audio/video/images of the log are not shared to others.
-- The devices who access the data can only read the logs(can't make changes to it).
+- The devices which access the data of others can only read the logs(can't make changes to it).
 
 # Conversation Threads
 
