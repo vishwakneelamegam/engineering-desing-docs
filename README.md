@@ -1,7 +1,7 @@
 # Log Consumable
 
 - A log is record of an activity that happened.
-- A log is a dictionary which contains unique id, time, date, log text, duration of the log and it has a dictionary which contains the file path of audio/image/video of the log.
+- A log follows dictionary structure which contains unique id, time, date, log text, duration of the log and it has a dictionary which contains the file path of audio/image/video of the log.
 - A log is immutable(cannot make changes after creating).
 - After creating the log, it is stored in the routine(A routine is a group of log in a sequence).
 - A specific log in a routine cannot be deleted, because it follows a sequence.
