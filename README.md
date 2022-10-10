@@ -20,7 +20,8 @@
 
 # Conversation Threads
 
-- Transactional manager, manages the transactions happening between siri and the application.
+- Transactional manager, handles the handshake between siri and the application.
+- The transactional manager is a singleton, so it has the access all over the application.
 - There are four transactional states which is used to create a routine, add logs to a routine, initiate routine guidance and confirm the logs step by step.
 - The transactional manager receives the action to do and data from Siri, which is said by the user and performs the action.
 - The transactional manager is a singleton, so it can perform any functionality from any environment.
