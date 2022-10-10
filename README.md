@@ -21,7 +21,7 @@
 # Conversation Threads
 
 - There are four transactional states which is used to create a routine, add logs to a routine, initiate routine guidance and confirm the logs step by step.
-- There will be a transactional manager, who manages the transactions happening between Siri and the application. Note : The conversation happening between Siri and user will be handeled by the Siri framework, The siri communicates with the transactional manager only if the conversation is successful, If the transactional manager is in android then it will manages the transactions between google assistant and the application.
+- There will be a transactional manager, who manages the transactions happening between Siri and the application. Note : The conversation happening between Siri and user will be handeled by the Siri framework, The siri communicates with the transactional manager only if the conversation is successful.
 - The transactional manager receives the action to do from Siri, which is said by the user and performs the action.
 - The transactional manager is a singleton, so it can perform any functionality from any environment.
 - Transactional manager checks if the transactions dependant to other transactions(example add log needs create routine).  If the dependancy is wrong then it will inform the user.
