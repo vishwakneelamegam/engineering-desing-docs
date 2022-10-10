@@ -25,3 +25,4 @@
 - The transactional manager get intent and their parameters as input from Siri/shortucts and ask the application to perform the actions according to the intent requested.
 - Transactional manager checks if the intent is dependant to other intent(example add log needs create routine) before performing an action.  If the dependancy is wrong then it will inform the user else it executes the function.
 - If the user wants to switch from one intent to another intent(create routine to guide routine) the manager confirms from the user and switches the intent.
+Note : the failure occured by the Siri/shortcuts are handled from the framework.
