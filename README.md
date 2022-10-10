@@ -23,4 +23,4 @@
 - Transactional manager, handles the handshake between siri and the application.
 - The transactional manager is a singleton, so it has the access to all functions in the application.
 - The transactional manager get intent and their parameters as input from Siri/shortucts and ask the application to perform the actions according to the intent requested.
-- Transactional manager checks if the intent is dependant to other intent(example add log needs create routine) before performing an action.  If the dependancy is wrong then it will inform the user.
+- Transactional manager checks if the intent is dependant to other intent(example add log needs create routine) before performing an action.  If the dependancy is wrong then it will inform the user else it executes the function.
