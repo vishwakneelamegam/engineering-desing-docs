@@ -24,4 +24,4 @@
 - The transactional manager is a singleton, so it has the access functions all over the application.
 - The transactional manager get intent and their parameters as input and ask the application to perform the actions according to the intent requested.
 - There are four transactional states which is used to create a routine, add logs to a routine, initiate routine guidance and confirm the logs step by step.
-- Transactional manager checks if the transactions dependant to other transactions(example add log needs create routine).  If the dependancy is wrong then it will inform the user.
+- Transactional manager checks if the intent is dependant to other intent(example add log needs create routine).  If the dependancy is wrong then it will inform the user.
