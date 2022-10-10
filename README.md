@@ -11,7 +11,7 @@
 
 - Every time if a user creates logs or delete logs or any changes made to logs, then it is updated to the realtime document logs, tagged with device token and the changes reflets who accessed the data.
 - If a user reinstalls the app, their logs will be updated to the device, with the help of device token(if the device data is available in the document logs).
-- If the user have share their logs to other user, then they have to share their device token. If they provide the device token, first the system checks whether it's valid then it makes the connection to the realtime nosql cloud and fetches the logs and updates to the device.
+- If the user have to share their logs to other user, then they have to share their device token. If they provide the device token, first the system checks whether it's valid then it makes the connection to the realtime nosql cloud and fetches the logs and updates to the device.
 - Only 10 shared device token can be accessed with a device.
 - If the user removes the shared device tokens then logs relevant to it also removed.
 - If any network failure occurs, after successful network connection the latest logs are updated to the cloud.
