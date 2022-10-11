@@ -25,7 +25,7 @@
 - There is a service called external communication and execution service(shortly called as ECE), which handles the the handshake between our application and other service like siri, shortcuts spotlight serach etc.
 - The ECE is a singleton, so it has access all over the application environment.
 - The service like Siri / shortcuts communicates with the ECE.
-- The ECE gets intent ID and it's data from the service like siri / shortcut.
+- The ECE gets intent ID and it's parameter from the service like siri / shortcut.
 - The ECE checks the intent ID in intent dictionary.
 - If the intent ID is available, then it checks the intent provides parameter, whether the intent is dependant to another intent.  Next it executes the fuction.
 - The intent dictionary has information about intent ID with what functionality should be executed, whether the intent has parameter or not and whether the intent is dependent to other intent.
