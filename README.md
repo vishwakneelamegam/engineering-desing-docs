@@ -28,5 +28,6 @@
 - The ECE gets intent ID and it's parameter from the service like siri / shortcut.
 - The ECE checks the intent ID in intent dictionary.
 - If the intent ID is available, then it checks the intent provides parameter, whether the intent is dependant to another intent.  Next it executes the fuction.
+- else, the ECE informs the issue to the external services.
 - The intent dictionary has information about intent ID with what functionality should be executed, whether the intent has parameter or not and whether the intent is dependent to other intent.
 - The ECE has a intent state variable which tracks the intent.  The intent state variable is used to check the intent state while switching from one state to another.
