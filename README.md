@@ -27,4 +27,4 @@
 - The service like Siri / shortcuts communicates with the ECE.
 - The ECE gets intent ID and it's data from the service like siri / shortcut.
 - The ECE checks the intent ID in intent dictionary.  If the intent ID is available, then it checks the intent provides parameter or not, else it throws an error flag. if it provides parameter then it gets the parameter and execute the functionality else execute the functionality.
-- The intent dictionary has information about intent ID with what functionality should be executed, whether the intent has parameter or not.
+- The intent dictionary has information about intent ID with what functionality should be executed, whether the intent has parameter or not and whether the intent is dependent to other intent.
