@@ -20,7 +20,11 @@
 - After successful fetching the storage service saves the logs to the device disk.
 - If any changes made by the owner of the logs then another deeplink is generated and it should be shared.  The old deeplink shared is expired and cannot be used.
 
-# Conversation Thread
+# Conversation Threads
 
 - There is a service called external communication and execution service(shortly called as ECE), which handles the the handshake between our application and other service like siri, shortcuts spotlight serach etc.
-- The ECE is a singleton, so it has access all over the application.
+- The ECE is a singleton, so it has access all over the application environment.
+- The service like Siri / shortcuts communicates with the ECE.
+- The ECE gets intent ID and it's data from the service like siri / shortcut.
+- The ECE checks the intent ID in intent dictionary.  If the intent ID is available, then it checks the intent provides parameter or not, else it throws an error flag. if it provides parameter then it gets the parameter and execute the functionality else execute the functionality.
+- The intent dictionary has information about intent ID with what functionality should be executed, whether the intent has parameter or not.
