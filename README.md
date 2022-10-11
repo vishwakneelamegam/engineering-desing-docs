@@ -1,12 +1,12 @@
 # Log Consumable
 
 - A log is record of an activity that happened.
-- A log follows dictionary structure which contains unique id, time, date, log text, duration of the log and it has a dictionary which contains the file path of audio/image/video of the log.
+- A log follows structure and protocol(it's a blueprint, which is adopted by the log structure) which contains unique id, time, date, log text, while creating a log.
 - A log is immutable(cannot make changes after creating).
-- After creating the log, it is stored in the routine(A routine is a group of log in a sequence).
-- A specific log in a routine cannot be deleted, because it follows a sequence.
-- When a routine is deleted, then log related to it are deleted.
-
+- There is a log encoder and decoder which follows the protocol.
+- If a log is created then the log encoder encodes and provides to storage service.
+- When a logs are fetched from the storage service, using log decoder it is decoded to the log structure.  The protocol checks the structure while decoding the log.  if it doesn't follows the protocol then it is destroyed.
+- The storage service is used to read and write the logs to the file.
 # Device Token
 
 - Every time if a user creates logs or delete logs or any changes made to logs, then it is updated to the cloud as document logs, tagged with device token and the changes reflets who accessed the data.
