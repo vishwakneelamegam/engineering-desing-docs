@@ -20,6 +20,7 @@
 - After successful fetching the storage service saves the logs to the device disk.
 - If any changes made by the owner of the logs then another deeplink is generated and it should be shared.  The old deeplink shared is expired and cannot be used.
 
-# Conversation Threads
+# Conversation Thread
 
-- There is a service called external communication and execution service, which handles the the handshake between our application and other service like siri, shortcuts spotlight serach etc.
+- There is a service called external communication and execution service(shortly called as ECE), which handles the the handshake between our application and other service like siri, shortcuts spotlight serach etc.
+- The ECE is a singleton, so it has access all over the application.
