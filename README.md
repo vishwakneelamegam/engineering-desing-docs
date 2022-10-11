@@ -6,7 +6,9 @@
 - There is a log encoder and decoder which follows the protocol.
 - If a log is created then the log encoder encodes and provides to storage service.
 - When a logs are fetched from the storage service, using log decoder it is decoded to the log structure.  The protocol checks the structure while decoding the log.  if it doesn't follows the protocol then it is destroyed.
-- The storage service is used to read and write the logs to the file.
+- The storage service is used to read, write and delete the logs to the file.
+- The log can be deleted by providing the unique id of the log to the storage service.
+
 # Device Token
 
 - Every time if a user creates logs or delete logs or any changes made to logs, then it is updated to the cloud as document logs, tagged with device token and the changes reflets who accessed the data.
