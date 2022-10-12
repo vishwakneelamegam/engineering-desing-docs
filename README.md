@@ -1,7 +1,7 @@
 # Log Consumable
 
-- A log is record of an activity that happened.
-- A log follows structure and protocol(it's a blueprint, which is adopted by the log structure) which contains unique id, time, date, log text and media path of the log while creating a log.
+- A log is instant record of an activity.
+- A log follows structure and protocol(it's a blueprint, which is adopted by the log structure)while creating a log.
 - A log is immutable(cannot make changes after creating).
 - There is a log encoder and decoder which follows the protocol.
 - If a log is created then the log encoder encodes and provides to storage service.
