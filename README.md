@@ -1,7 +1,7 @@
 # Log Consumable
 
 - A log is instant record of an activity.
-- A log follows structure(UUID,log,time,date) while creating a log.
+- A log follows structure(UUID,log,time,date,duration,Array of media paths) while creating a log.
 - A log is immutable(cannot make changes after creating).
 - There is a log encoder and decoder which follows the structure.
 - If a log is created then the log encoder encodes and provides to system.
