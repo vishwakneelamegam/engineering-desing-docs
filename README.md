@@ -6,6 +6,7 @@
 - There is a log encoder and decoder which follows the structure.
 - If a log is created then the log encoder encodes and provides to system.
 - When a logs are fetched from the system, using log decoder it is decoded to the log structure.  The structure checks the log while decoding.  if it doesn't follows the structure then it is destroyed.
+- A log can only be created, viewed and deleted.
 
 # Device Token
 
