@@ -24,4 +24,5 @@
 - If the intent ID is available, then it checks whether the intent provides parameter, whether the intent is dependant to another intent.  Next it executes the fuction.
 - else, the ECE informs the issue to the external services.
 - The intent dictionary has information about intent ID with what functionality should be executed, whether the intent has parameters or not and whether the intent is dependent to other intent.
+- The intents can be increased or decreased as per the app requirement using intent dictionary.
 - The ECE has a intent state variable which tracks the intent.  The intent state variable is used to check the intent state while switching from one state to another.
