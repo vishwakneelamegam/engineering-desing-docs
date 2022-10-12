@@ -2,6 +2,7 @@
 
 - A log is instant record of an activity.
 - A log follows structure(UUID,log,time,date,extra information) while creating a log.
+- The extra information is an optional parameter.  In future the log parameter can be expanded, so those parameters can be stored there.
 - A log is immutable(cannot make changes after creating).
 - There is a log encoder and decoder which follows the structure.
 - If a log is created then the log encoder encodes and provides to storage service.
