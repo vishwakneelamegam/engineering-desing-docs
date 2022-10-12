@@ -11,7 +11,8 @@
 
 - If a user wants to share their logs to other users, then the logs will be shared with the device token.
 - Before the user access the logs the device token is verified, If the token is valid then the logs are provided else it informs the system that the device token is invalid.
-- These device tokens are immutable, so 
+- These device tokens are immutable(if a user reinstall the application it's not changed).
+- The device tokens are shared in encoded format.
 
 # Conversation Threads
 
