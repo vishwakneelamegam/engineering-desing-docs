@@ -20,7 +20,7 @@
 
 # Conversation Threads
 
-- There is a service called external communication and execution service(shortly called as ECE), which handles the the handshake between our application and other service like siri, shortcuts spotlight serach etc.
+- There is a service called external communication and execution service(shortly called as ECE), which handles the the handshake between our application and other service like siri, shortcuts spotlight search etc.
 - The ECE is a singleton, so it has access all over the application environment.
 - The service like Siri / shortcuts communicates with the ECE.
 - The ECE gets intent ID and it's parameter from the service like siri / shortcut.
