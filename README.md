@@ -3,11 +3,9 @@
 - A log is instant record of an activity.
 - A log follows structure while creating a log.
 - A log is immutable(cannot make changes after creating).
-- There is a log encoder and decoder which follows the protocol.
+- There is a log encoder and decoder which follows the structure.
 - If a log is created then the log encoder encodes and provides to storage service.
-- When a logs are fetched from the storage service, using log decoder it is decoded to the log structure.  The protocol checks the structure while decoding the log.  if it doesn't follows the protocol then it is destroyed.
-- The storage service is used to read, write and delete the logs to the file.
-- The log can be deleted by providing the unique id of the log to the storage service.
+- When a logs are fetched from the storage service, using log decoder it is decoded to the log structure.  The structure checks the log while decoding.  if it doesn't follows the structure then it is destroyed.
 
 # Device Token
 
